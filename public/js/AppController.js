@@ -27,9 +27,9 @@
                 $scope.showStartOver = !$scope.showStartOver;
                 console.log('Loading weather in '+$scope.cityName + ', ' +$scope.countryCode);
                 if ($scope.countryCode == 'US')
-                    $scope.urlRoot = $scope.urlRoot + $scope.cityName +','+$scope.stateName + ',US&APPID=a90be4664ca52ef6ed8d2ab21fdfe90a';
+                    $scope.urlRoot = $scope.urlRoot + $scope.cityName +','+$scope.stateName + ',US&APPID=[replaceme]';
                 else 
-                    $scope.urlRoot = $scope.urlRoot + $scope.cityName + ',' + $scope.countryCode + '&APPID=a90be4664ca52ef6ed8d2ab21fdfe90a';
+                    $scope.urlRoot = $scope.urlRoot + $scope.cityName + ',' + $scope.countryCode + '&APPID=[replaceme]';
                 console.log($scope.urlRoot);
 
                 $http({
